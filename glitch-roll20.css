@@ -51,3 +51,11 @@ div.costs {
 div.costs h2 {
     grid-column: 1 / span 2;
 }
+
+/* Colour grid sections so they stand out better */
+div.grid-box {
+	background-color: Ivory;
+	border: 1pt solid black;
+	border-radius: 5%;
+	padding: 5%
+}
