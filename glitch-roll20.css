@@ -1,1 +1,18 @@
-/* Empty File TBD from scratch after learning some CSS */
+/* Display attributes and costs as grids. */
+div.attributes {
+    display: grid;
+    grid-template-columns: 5em 2.5em;
+    column-gap: 1em;
+}
+div.attributes h2 {
+    grid-column: 1 / span 2;
+}
+
+div.costs {
+    display: grid;
+    grid-template-columns: 5em 2.5em;
+    column-gap: 1em;
+}
+div.costs h2 {
+    grid-column: 1 / span 2;
+}
