@@ -5,6 +5,8 @@ div.sheet-main {
 	                     "attributes costs"
 						 "gifts      treasures"
 						 "technique  destruction";
+	grid-gap: 1em;
+	column-gap: 1em;
 }
 
 div.bio {
