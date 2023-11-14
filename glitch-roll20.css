@@ -1,5 +1,35 @@
+/* Grid layout of sections */
+div.sheet-main {
+	display: grid;
+	grid-template-areas: "bio        bio"
+	                     "attributes costs"
+						 "gifts      treasures"
+						 "technique  destruction";
+}
+
+div.bio {
+	grid-area: bio;
+}
+
+div.gifts {
+	grid-area: gifts;
+}
+
+div.treasures {
+	grid-area: treasures;
+}
+
+div.technique {
+	grid-area: technique;
+}
+
+div.destruction {
+	grid-area: destruction;
+}
+
 /* Display attributes and costs as grids. */
 div.attributes {
+	grid-area: attributes;
     display: grid;
     grid-template-columns: 5em 2.5em;
     column-gap: 1em;
@@ -10,6 +40,7 @@ div.attributes h2 {
 }
 
 div.costs {
+	grid-area: costs;
     display: grid;
     grid-template-columns: 5em 2.5em;
     column-gap: 1em;

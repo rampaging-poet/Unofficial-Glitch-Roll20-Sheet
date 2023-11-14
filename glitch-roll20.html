@@ -1,96 +1,93 @@
 <!-- Barebones starting point list of attributes -->
 
-<!-- Basic Identity -->
-<div>
-	<p>
-		<span>Player Name:</span>
-		<input type="text" class='sheet-input' name="attr_player_name" placeholder="Player Name" />
-	</p>
-	
-	<p>
-		<span>Character Name:</span>
-		<input type="text" class='sheet-input' name="attr_character_name" placeholder="Character Name" />
-	</p>
-	
-<div>
-	<p>
-		<span>Luthe:</span>
-		<textarea class='sheet-input' id="attr_luthe" name="attr_luthe" rows="2" cols="50"></textarea>
-	</p>
-	
-	<p>
-		<span>Bane</span>
-		<input type="text" class='sheet-input' name="attr_bane" />
-	</p>
-</div>
+<div class="sheet-main">
+	<!-- Basic Identity -->
+	<div class="bio">
+		<p>
+			<span>Player Name:</span>
+			<input type="text" class='sheet-input' name="attr_player_name" placeholder="Player Name" />
+		</p>
+		
+		<p>
+			<span>Character Name:</span>
+			<input type="text" class='sheet-input' name="attr_character_name" placeholder="Character Name" />
+		</p>
+		
+		<p>
+			<span>Luthe:</span>
+			<textarea class='sheet-input' id="attr_luthe" name="attr_luthe" rows="2" cols="50"></textarea>
+		</p>
+		
+		<p>
+			<span>Bane</span>
+			<input type="text" class='sheet-input' name="attr_bane" />
+		</p>
+	</div>
 
-<hr>
+	<!-- Attributes and costs -->
+	<div class="attributes">
+		<h2> Attributes</h2>
+		
+		<span>EIDE</span>
+		<input type="number" class='sheet-input' min="0" max="7" name="attr_eide" value="0" />
+		
+		<span>FLORE</span>
+		<input type="number" class='sheet-input' min="0" max="7" name="attr_flore"  value="0" />
+		
+		<span>LORE</span>
+		<input type="number" class='sheet-input' min="0" max="7" name="attr_lore" value="0" />
+		
+		<span>WYRD</span>
+		<input type="number" class='sheet-input' min="0" max="7" name="attr_wyrd" value="0" />
+		
+		<span>ABILITY</span>
+		<input type="number" class='sheet-input' min="0" max="7" name="attr_ability" value="0" />
+	</div>
 
-<!-- Attributes and costs -->
-<div class="attributes">
-	<h2> Attributes</h2>
-	
-	<span>EIDE</span>
-	<input type="number" class='sheet-input' min="0" max="7" name="attr_eide" value="0" />
-	
-	<span>FLORE</span>
-	<input type="number" class='sheet-input' min="0" max="7" name="attr_flore"  value="0" />
-	
-	<span>LORE</span>
-	<input type="number" class='sheet-input' min="0" max="7" name="attr_lore" value="0" />
-	
-	<span>WYRD</span>
-	<input type="number" class='sheet-input' min="0" max="7" name="attr_wyrd" value="0" />
-	
-	<span>ABILITY</span>
-	<input type="number" class='sheet-input' min="0" max="7" name="attr_ability" value="0" />
-</div>
+	<div class="costs">
+		<h2>Costs</h2>
+		
+		<span>STILLING</span>
+		<input type="number" class='sheet-input' max="108" name="attr_cost_stilling" value="0" />
 
-<div class="costs">
-	<h2>Costs</h2>
-	
-	<span>STILLING</span>
-	<input type="number" class='sheet-input' max="108" name="attr_cost_stilling" value="0" />
+		<span>IMMERSION</span>
+		<input type="number" class='sheet-input' max="108" name="attr_cost_immersion" value="0" />
 
-	<span>IMMERSION</span>
-	<input type="number" class='sheet-input' max="108" name="attr_cost_immersion" value="0" />
+		<span>FUGUE</span>
+		<input type="number" class='sheet-input' max="108" name="attr_cost_fugue" value="0" />
 
-	<span>FUGUE</span>
-	<input type="number" class='sheet-input' max="108" name="attr_cost_fugue" value="0" />
+		<span>BURN</span>
+		<input type="number" class='sheet-input' max="108" name="attr_cost_burn" value="0" />
 
-	<span>BURN</span>
-	<input type="number" class='sheet-input' max="108" name="attr_cost_burn" value="0" />
+		<span>WEAR</span>
+		<input type="number" class='sheet-input' max="108" name="attr_cost_wear" value="40" />	
+	</div>
 
-	<span>WEAR</span>
-	<input type="number" class='sheet-input' max="108" name="attr_cost_wear" value="40" />	
-</div>
-
-<hr>
-
-<!--- Freeform Entries -->
-<div>
-	<p>
-		<span>Gifts, Bonds, and Geasa</span>
-		<textarea class='sheet-input' id="attr_gifts" name="attr_gifts" rows="6" cols="50"></textarea>
-	</p>
-	
-</div>
-<div>
-	<p>
-		<span>Treasures and Arcana</span>
-		<textarea class='sheet-input' id="attr_gifts" name="attr_treasure" rows="6" cols="50"></textarea>
-	</p>
-</div>
-<div>
-	<p>
-		<span>Technique</span>
-		<input type="text" class='sheet-input' name="attr_technique" />
-	</p>
-	
-</div>
-<div>
-	<p>
-		<span>Power of Destruction</span>
-		<input type="text" class='sheet-input' name="attr_destruction" />
-	</span>
+	<!--- Freeform Entries -->
+	<div class="gifts">
+		<p>
+			<span>Gifts, Bonds, and Geasa</span>
+			<textarea class='sheet-input' id="attr_gifts" name="attr_gifts" rows="6" cols="50"></textarea>
+		</p>
+		
+	</div>
+	<div class="treasures">
+		<p>
+			<span>Treasures and Arcana</span>
+			<textarea class='sheet-input' id="attr_gifts" name="attr_treasure" rows="6" cols="50"></textarea>
+		</p>
+	</div>
+	<div class="technique">
+		<p>
+			<span>Technique</span>
+			<input type="text" class='sheet-input' name="attr_technique" />
+		</p>
+		
+	</div>
+	<div class="destruction">
+		<p>
+			<span>Power of Destruction</span>
+			<input type="text" class='sheet-input' name="attr_destruction" />
+		</p>
+	</div>
 </div>
