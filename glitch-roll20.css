@@ -57,6 +57,6 @@ div.costs h2 {
 div.grid-box {
 	background-color: Ivory;
 	border: 1pt solid black;
-	border-radius: 5%;
-	padding: 5%
+	border-radius: 2em;
+	padding: 1em;
 }
