@@ -2,77 +2,83 @@
 
 <!-- Basic Identity -->
 <div>
-	<label for="attr_player_name">Player:</label>
-	<input type="text" class='sheet-input' name="attr_player_name" placeholder="Player Name" />
+	<p>
+		<span>Player Name:</span>
+		<input type="text" class='sheet-input' name="attr_player_name" placeholder="Player Name" />
+	</p>
 	
-</div>
+	<p>
+		<span>Character Name:</span>
+		<input type="text" class='sheet-input' name="attr_character_name" placeholder="Character Name" />
+	</p>
+	
 <div>
-	<label for="attr_character_name">Character Name:</label>
-	<input type="text" class='sheet-input' name="attr_character_name" placeholder="Character Name" />
+	<p>
+		<span>Luthe:</span>
+		<textarea class='sheet-input' id="attr_luthe" name="attr_luthe" rows="2" cols="50"></textarea>
+	</p>
 	
-</div>
-<div>
-	<label for="attr_luthe">Luthe:</label>
-	<textarea class='sheet-input' id="attr_luthe" name="attr_luthe" rows="2" cols="50"/>
-	
-</div>
-<div>
-	<label for="attr_bane">Bane</label>
-	<input type="text" class='sheet-input' name="attr_bane" />
-	
+	<p>
+		<span>Bane</span>
+		<input type="text" class='sheet-input' name="attr_bane" />
+	</p>
 </div>
 
 <hr>
 
 <!-- Attributes and costs -->
 <div>
-	<label for="attr_eide">EIDE</label>
-	<input type="number" class='sheet-input' min="0" max="7" name="attr_eide" />
+	<p>
+		<span>EIDE</span>
+		<input type="number" class='sheet-input' min="0" max="7" name="attr_eide" />
+	</p>
 	
-</div>
-<div>
-	<label for="attr_flore">FLORE</label>
-	<input type="number" class='sheet-input' min="0" max="7" name="attr_flore" />
+	<p>
+		<span>FLORE</span>
+		<input type="number" class='sheet-input' min="0" max="7" name="attr_flore" />
+	</p>
 	
-</div>
-<div>
-	<label for="attr_lore">LORE</label>
-	<input type="number" class='sheet-input' min="0" max="7" name="attr_lore" />
+	<p>
+		<span>LORE</span>
+		<input type="number" class='sheet-input' min="0" max="7" name="attr_lore" />
+	</p>
 	
-</div>
-<div>
-	<label for="attr_wyrd">WYRD</label>
-	<input type="number" class='sheet-input' min="0" max="7" name="attr_wyrd" />
+	<p>
+		<span>WYRD</span>
+		<input type="number" class='sheet-input' min="0" max="7" name="attr_wyrd" />
+	</p>
 	
+	<p>
+		<span>ABILITY</span>
+		<input type="number" class='sheet-input' min="0" max="7" name="attr_ability" />
+	</p>
 </div>
+
 <div>
-	<label for="attr_ability">ABILITY</label>
-	<input type="number" class='sheet-input' min="0" max="7" name="attr_ability" />
+	<p>
+		<span>STILLING</span>
+		<input type="number" class='sheet-input' max="108" name="attr_cost_stilling" />
+	</p>
 	
-</div>
-<div>
-	<label for="attr_cost_stilling">STILLING</label>
-	<input type="number" class='sheet-input' max="108" name="attr_cost_stilling" />
+	<p>
+		<span>IMMERSION</span>
+		<input type="number" class='sheet-input' max="108" name="attr_cost_immersion" />
+	</p>
 	
-</div>
-<div>
-	<label for="attr_cost_immersion">IMMERSION</label>
-	<input type="number" class='sheet-input' max="108" name="attr_cost_immersion" />
+	<p>
+		<span>FUGUE</span>
+		<input type="number" class='sheet-input' max="108" name="attr_cost_fugue" />
+	</p>
 	
-</div>
-<div>
-	<label for="attr_cost_fugue">FUGUE</label>
-	<input type="number" class='sheet-input' max="108" name="attr_cost_fugue" />
+	<p>
+		<span>BURN</span>
+		<input type="number" class='sheet-input' max="108" name="attr_cost_burn" />
+	</p>
 	
-</div>
-<div>
-	<label for="attr_cost_burn">BURN</label>
-	<input type="number" class='sheet-input' max="108" name="attr_cost_burn" />
-	
-</div>
-<div>
-	<label for="attr_cost_wear">WEAR</label>
-	<input type="number" class='sheet-input' max="108" name="attr_cost_wear" />
+	<p>
+		<span>WEAR</span>
+		<input type="number" class='sheet-input' max="108" name="attr_cost_wear" />
+	</p>
 	
 </div>
 
@@ -80,22 +86,28 @@
 
 <!--- Freeform Entries -->
 <div>
-	<label for="attr_gifts">Gifts, Bonds, and Geasa</label>
-	<textarea class='sheet-input' id="attr_gifts" name="attr_gifts" rows="6" cols="50"/>
+	<p>
+		<span>Gifts, Bonds, and Geasa</span>
+		<textarea class='sheet-input' id="attr_gifts" name="attr_gifts" rows="6" cols="50"></textarea>
+	</p>
 	
 </div>
 <div>
-	<label for="attr_treasure">Treasures and Arcana</label>
-	<textarea class='sheet-input' id="attr_gifts" name="attr_treasure" rows="6" cols="50"/>
+	<p>
+		<span>Treasures and Arcana</span>
+		<textarea class='sheet-input' id="attr_gifts" name="attr_treasure" rows="6" cols="50"></textarea>
+	</p>
+</div>
+<div>
+	<p>
+		<span>Technique</span>
+		<input type="text" class='sheet-input' name="attr_technique" />
+	</p>
 	
 </div>
 <div>
-	<label for="attr_technique">Technique</label>
-	<input type="text" class='sheet-input' name="attr_technique" />
-	
-</div>
-<div>
-	<label for="attr_destruction">Power of Destruction</label>
-	<input type="text" class='sheet-input' name="attr_destruction" />
-	
+	<p>
+		<span>Power of Destruction</span>
+		<input type="text" class='sheet-input' name="attr_destruction" />
+	</span>
 </div>
