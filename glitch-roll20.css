@@ -1,6 +1,9 @@
 /* No resizing textarea controls */
 textarea {
 	resize:none;
+	box-sizing: border-box;
+	width: 100%;
+	padding-right: 1em;
 }
 
 /* Grid layout of sections */
