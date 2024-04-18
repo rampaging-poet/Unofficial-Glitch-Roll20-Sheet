@@ -1,3 +1,8 @@
+/* No resizing textarea controls */
+textarea {
+	resize:none;
+}
+
 /* Grid layout of sections */
 div.sheet-main {
 	display: grid;
