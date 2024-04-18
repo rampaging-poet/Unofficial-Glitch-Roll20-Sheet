@@ -71,6 +71,14 @@ input.aligned-inputs {
 	width: 80%
 }
 
+textarea.luthe {
+	height: 4em;
+}
+
+textarea.free-entry {
+	height: 10em;
+}
+
 /* Colour grid sections so they stand out better */
 div.grid-box {
 	background-color: Ivory;
