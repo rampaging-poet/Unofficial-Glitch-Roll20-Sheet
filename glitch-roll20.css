@@ -58,6 +58,15 @@ div.costs h2 {
     grid-column: 1 / span 2;
 }
 
+span.aligned-inputs {
+	width: 20%;
+	float: left;
+}
+
+input.aligned-inputs {
+	width: 80%
+}
+
 /* Colour grid sections so they stand out better */
 div.grid-box {
 	background-color: Ivory;
