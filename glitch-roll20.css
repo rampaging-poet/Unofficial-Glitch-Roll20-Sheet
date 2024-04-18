@@ -16,6 +16,7 @@ div.sheet-main {
 						 "destruction   destruction";
 	grid-gap: 1em;
 	column-gap: 1em;
+	min-width: 40em;
 }
 
 div.bio {
