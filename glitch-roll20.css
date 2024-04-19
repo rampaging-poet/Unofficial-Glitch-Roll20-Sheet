@@ -6,6 +6,11 @@ textarea {
 	padding-right: 1em;
 }
 
+span {
+	display: flex;
+	align-items: center;
+}
+
 /* Grid layout of sections */
 div.sheet-main {
 	display: grid;
@@ -62,13 +67,20 @@ div.costs h2 {
     grid-column: 1 / span 2;
 }
 
+p.aligned-inputs {
+	display: flex;
+}
+
 span.aligned-inputs {
 	width: 20%;
 	float: left;
+	vertical-align: middle;
 }
 
 input.aligned-inputs {
-	width: 80%
+	width: 80%;
+	vertical-align: middle;
+	flex-shrink: 0;
 }
 
 textarea.luthe {
