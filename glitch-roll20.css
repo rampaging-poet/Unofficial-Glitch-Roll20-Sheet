@@ -88,7 +88,8 @@ p.aligned-inputs {
 	display: flex;
 }
 
-span.aligned-inputs {
+span.aligned-inputs,
+input[type='checkbox'].aligned-inputs {
 	width: 20%;
 	float: left;
 	vertical-align: middle;
@@ -116,11 +117,17 @@ div.grid-box {
 	padding: 1em;
 }
 
-/* Quests Tab 
-div.sheet-quests{
-	
+/* Quests Tab */
+div.quest-box{
+	display: block;
 }
-*/
+
+div.quest-details { display: none }
+
+input.quest-show-1:checked ~ div.quest-details-1
+{
+   display: block;
+}
 
 span.quest-separator {
 	padding-right: 1em;

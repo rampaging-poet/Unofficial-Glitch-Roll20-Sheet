@@ -100,8 +100,9 @@
 <!-- The Quest Tab -->
 <div class="sheet-tab sheet-quests">
 	<div class="grid-box quest-box">
-		<p class="aligned-inputs">
-			<span class="aligned-inputs">Quest #1</span>
+		<input type='checkbox' class="sheet-input quest-show-1" name="attr_quest1_show" />
+		<p class="aligned-text">
+			<span class="aligned-inputs">Name:</span>
 			<input type="text" class='sheet-input aligned-inputs' name="attr_quest1_name" />
 		</p>
 		
@@ -112,8 +113,8 @@
 			<input type="number" class="sheet-input" min="0" name="attr_quest1_xp_max"</input>
 		</p>
 		
-		<p>
-			<textarea class='sheet-input quest-desc' id="attr_luthe" name="attr_quest1_desc" rows="2" cols="50"></textarea>
-		</p>
+		<div class="quest-details quest-details-1">
+			<textarea class='sheet-input quest-desc' id="attr_quest1_desc" name="attr_quest1_desc" rows="2" cols="50"></textarea>
+		</div>
 	</div>
 </div>
