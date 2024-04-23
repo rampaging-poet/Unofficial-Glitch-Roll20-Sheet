@@ -124,7 +124,11 @@ div.quest-box{
 
 div.quest-details { display: none }
 
-input.quest-show-1:checked ~ div.quest-details-1
+input.quest-show-1:checked ~ div.quest-details-1,
+input.quest-show-2:checked ~ div.quest-details-2,
+input.quest-show-3:checked ~ div.quest-details-3,
+input.quest-show-4:checked ~ div.quest-details-4,
+input.quest-show-5:checked ~ div.quest-details-5
 {
    display: block;
 }
