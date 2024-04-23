@@ -1,3 +1,22 @@
+/* CSS for tab selection */
+/* All tab content divs need the sheet-tab class */
+div.sheet-tab {
+	display: none;
+	min-width: 40em;
+}
+
+/* Add additional tabs here with the :checked selector to for conditional display/ */
+input.tabselect-main:checked ~ div.sheet-main
+{
+   display: grid;
+}
+
+input.tabselect-quests:checked ~ div.sheet-quests
+{
+	display: block;
+}
+
+
 /* No resizing textarea controls */
 textarea {
 	resize:none;
@@ -13,7 +32,6 @@ span {
 
 /* Grid layout of sections */
 div.sheet-main {
-	display: grid;
 	grid-template-areas: "bio           bio"
 	                     "glitch_atribs costs"
 						 "gifts         treasures"
@@ -21,7 +39,6 @@ div.sheet-main {
 						 "destruction   destruction";
 	grid-gap: 1em;
 	column-gap: 1em;
-	min-width: 40em;
 }
 
 div.bio {
