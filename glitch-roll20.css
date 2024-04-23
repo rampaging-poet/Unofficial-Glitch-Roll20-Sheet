@@ -1,3 +1,22 @@
+/* CSS for tab selection */
+/* All tab content divs need the sheet-tab class */
+div.sheet-tab {
+	display: none;
+	min-width: 40em;
+}
+
+/* Add additional tabs here with the :checked selector to for conditional display/ */
+input.tabselect-main:checked ~ div.sheet-main
+{
+   display: grid;
+}
+
+input.tabselect-quests:checked ~ div.sheet-quests
+{
+	display: block;
+}
+
+
 /* No resizing textarea controls */
 textarea {
 	resize:none;
@@ -13,7 +32,6 @@ span {
 
 /* Grid layout of sections */
 div.sheet-main {
-	display: grid;
 	grid-template-areas: "bio           bio"
 	                     "glitch_atribs costs"
 						 "gifts         treasures"
@@ -21,7 +39,6 @@ div.sheet-main {
 						 "destruction   destruction";
 	grid-gap: 1em;
 	column-gap: 1em;
-	min-width: 40em;
 }
 
 div.bio {
@@ -71,7 +88,8 @@ p.aligned-inputs {
 	display: flex;
 }
 
-span.aligned-inputs {
+span.aligned-inputs,
+input[type='checkbox'].aligned-inputs {
 	width: 20%;
 	float: left;
 	vertical-align: middle;
@@ -97,4 +115,30 @@ div.grid-box {
 	border: 1pt solid black;
 	border-radius: 2em;
 	padding: 1em;
+}
+
+/* Quests Tab */
+div.quest-box{
+	display: block;
+	margin: 1em;
+}
+
+div.quest-details { display: none }
+
+input.quest-show-1:checked ~ div.quest-details-1,
+input.quest-show-2:checked ~ div.quest-details-2,
+input.quest-show-3:checked ~ div.quest-details-3,
+input.quest-show-4:checked ~ div.quest-details-4,
+input.quest-show-5:checked ~ div.quest-details-5
+{
+   display: block;
+}
+
+span.quest-separator {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+textarea.quest-desc {
+	height: 12em;
 }

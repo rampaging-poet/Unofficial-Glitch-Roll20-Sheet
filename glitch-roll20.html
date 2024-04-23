@@ -1,6 +1,10 @@
-<!-- Barebones starting point list of attributes -->
 
-<div class="sheet-main">
+<input type="radio" class="tabselect-main" name="attr_tab" value="0" checked="checked" /> Attributes
+<input type="radio" class="tabselect-quests" name="attr_tab" value="1" /> Quests
+<hr>
+
+<!-- The Main Tab with attributes and costs. -->
+<div class="sheet-tab sheet-main">
 	<!-- Basic Identity -->
 	<div class="bio grid-box">
 		<p class="aligned-inputs">
@@ -90,5 +94,103 @@
 			<span class="aligned-inputs">Power of Destruction</span>
 			<input type="text" class='sheet-input aligned-inputs' name="attr_destruction" />
 		</p>
+	</div>
+</div>
+
+<!-- The Quest Tab -->
+<div class="sheet-tab sheet-quests">
+	<div class="grid-box quest-box">
+		<input type='checkbox' class="sheet-input quest-show-1" name="attr_quest1_show" />
+		<p class="aligned-text">
+			<span class="aligned-inputs">Name:</span>
+			<input type="text" class='sheet-input aligned-inputs' name="attr_quest1_name" />
+		</p>
+		
+		<p class="aligned-inputs">
+			<span class="aligned-inputs">Experience:</span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest1_xp"</input>
+			<span class = "quest-separator"> / </span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest1_xp_max"</input>
+		</p>
+		
+		<div class="quest-details quest-details-1">
+			<textarea class='sheet-input quest-desc' id="attr_quest1_desc" name="attr_quest1_desc" rows="2" cols="50"></textarea>
+		</div>
+	</div>
+	
+	<div class="grid-box quest-box">
+		<input type='checkbox' class="sheet-input quest-show-2" name="attr_quest2_show" />
+		<p class="aligned-text">
+			<span class="aligned-inputs">Name:</span>
+			<input type="text" class='sheet-input aligned-inputs' name="attr_quest2_name" />
+		</p>
+		
+		<p class="aligned-inputs">
+			<span class="aligned-inputs">Experience:</span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest2_xp"</input>
+			<span class = "quest-separator"> / </span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest2_xp_max"</input>
+		</p>
+		
+		<div class="quest-details quest-details-2">
+			<textarea class='sheet-input quest-desc' id="attr_quest2_desc" name="attr_quest2_desc" rows="2" cols="50"></textarea>
+		</div>
+	</div>
+	
+	<div class="grid-box quest-box">
+		<input type='checkbox' class="sheet-input quest-show-3" name="attr_quest3_show" />
+		<p class="aligned-text">
+			<span class="aligned-inputs">Name:</span>
+			<input type="text" class='sheet-input aligned-inputs' name="attr_quest3_name" />
+		</p>
+		
+		<p class="aligned-inputs">
+			<span class="aligned-inputs">Experience:</span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest3_xp"</input>
+			<span class = "quest-separator"> / </span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest3_xp_max"</input>
+		</p>
+		
+		<div class="quest-details quest-details-3">
+			<textarea class='sheet-input quest-desc' id="attr_quest3_desc" name="attr_quest3_desc" rows="2" cols="50"></textarea>
+		</div>
+	</div>
+	
+	<div class="grid-box quest-box">
+		<input type='checkbox' class="sheet-input quest-show-4" name="attr_quest4_show" />
+		<p class="aligned-text">
+			<span class="aligned-inputs">Name:</span>
+			<input type="text" class='sheet-input aligned-inputs' name="attr_quest4_name" />
+		</p>
+		
+		<p class="aligned-inputs">
+			<span class="aligned-inputs">Experience:</span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest4_xp"</input>
+			<span class = "quest-separator"> / </span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest4_xp_max"</input>
+		</p>
+		
+		<div class="quest-details quest-details-4">
+			<textarea class='sheet-input quest-desc' id="attr_quest4_desc" name="attr_quest4_desc" rows="2" cols="50"></textarea>
+		</div>
+	</div>
+	
+	<div class="grid-box quest-box">
+		<input type='checkbox' class="sheet-input quest-show-5" name="attr_quest5_show" />
+		<p class="aligned-text">
+			<span class="aligned-inputs">Name:</span>
+			<input type="text" class='sheet-input aligned-inputs' name="attr_quest5_name" />
+		</p>
+		
+		<p class="aligned-inputs">
+			<span class="aligned-inputs">Experience:</span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest5_xp"</input>
+			<span class = "quest-separator"> / </span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest5_xp_max"</input>
+		</p>
+		
+		<div class="quest-details quest-details-5">
+			<textarea class='sheet-input quest-desc' id="attr_quest5_desc" name="attr_quest5_desc" rows="2" cols="50"></textarea>
+		</div>
 	</div>
 </div>
