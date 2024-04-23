@@ -115,3 +115,18 @@ div.grid-box {
 	border-radius: 2em;
 	padding: 1em;
 }
+
+/* Quests Tab 
+div.sheet-quests{
+	
+}
+*/
+
+span.quest-separator {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+textarea.quest-desc {
+	height: 12em;
+}

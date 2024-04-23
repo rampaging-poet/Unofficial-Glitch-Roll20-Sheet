@@ -99,5 +99,21 @@
 
 <!-- The Quest Tab -->
 <div class="sheet-tab sheet-quests">
-	<span>This will be the quests tab.</span>
+	<div class="grid-box quest-box">
+		<p class="aligned-inputs">
+			<span class="aligned-inputs">Quest #1</span>
+			<input type="text" class='sheet-input aligned-inputs' name="attr_quest1_name" />
+		</p>
+		
+		<p class="aligned-inputs">
+			<span class="aligned-inputs">Experience:</span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest1_xp"</input>
+			<span class = "quest-separator"> / </span>
+			<input type="number" class="sheet-input" min="0" name="attr_quest1_xp_max"</input>
+		</p>
+		
+		<p>
+			<textarea class='sheet-input quest-desc' id="attr_luthe" name="attr_quest1_desc" rows="2" cols="50"></textarea>
+		</p>
+	</div>
 </div>
