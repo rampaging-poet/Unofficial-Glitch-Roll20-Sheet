@@ -120,6 +120,7 @@ div.grid-box {
 /* Quests Tab */
 div.quest-box{
 	display: block;
+	margin: 1em;
 }
 
 div.quest-details { display: none }
