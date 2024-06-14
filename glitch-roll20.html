@@ -210,31 +210,52 @@
 
 <!-- The Wounds Tab -->
 <div class="sheet-tab sheet-wounds">
-	<h1>Active Wounds</h1>
-	
-	<div class="wound-row">
-		<span>Cost</span>
-		<span>Severity</span>
-		<span>Description</span>
+	<div class="grid-box wound-box">
+		<h2>Active Wounds</h2>
+		
+		<div class="wound-row">
+			<span>Cost</span>
+			<span>Severity</span>
+			<span>Description</span>
+		</div>
+		
+		<fieldset class="repeating_wounds">
+			<div class="wound-row">
+				<select name="attr_cost" class="sheet-input spacefilling-input">
+					<option value="Stilling" selected="selected">Stilling</option>
+					<option value="Fugue">Fugue</option>
+					<option value="Immersion">Immersion</option>
+					<option value="Burn">Burn</option>
+					<option value="Wear">Wear</option>
+				</select>
+				
+				<select name="attr_severity" class="sheet-input spacefilling-input">
+					<option value="10" selected="selected">Superficial</option>
+					<option value="25">Serious</option>
+					<option value="50">Transformative</option>
+				</select>
+				
+				<input type="text" class="sheet-input spacefilling-input" name="attr_description">
+			</div>
+		</fieldset>
 	</div>
 	
-	<fieldset class="repeating_wounds">
-		<div class="wound-row">
-			<select name="attr_cost" class="sheet-input spacefilling-input">
-				<option value="Stilling" selected="selected">Stilling</option>
-				<option value="Fugue">Fugue</option>
-				<option value="Immersion">Immersion</option>
-				<option value="Burn">Burn</option>
-				<option value="Wear">Wear</option>
-			</select>
-			
-			<select name="attr_severity" class="sheet-input spacefilling-input">
-				<option value="10" selected="selected">Superficial</option>
-				<option value="25">Serious</option>
-				<option value="50">Transformative</option>
-			</select>
-			
-			<input type="text" class="sheet-input spacefilling-input" name="attr_description">
-		</div>
-	</fieldset>
+	<div class="grid-box wound-box wound-totals-box">
+		<h2>Total Cost In Wounds</h2>
+		
+		<span>STILLING</span>
+		<input type="number" class='sheet-input' min="0" max="400" name="attr_wounds_stilling" value="0" />
+
+		<span>IMMERSION</span>
+		<input type="number" class='sheet-input' min="0" max="400" name="attr_wounds_immersion" value="0" />
+
+		<span>FUGUE</span>
+		<input type="number" class='sheet-input' min="0" max="400" name="attr_wounds_fugue" value="0" />
+
+		<span>BURN</span>
+		<input type="number" class='sheet-input' min="0" max="400" name="attr_wounds_burn" value="0" />
+
+		<span>WEAR</span>
+		<input type="number" class='sheet-input' min="0" max="400" name="attr_wounds_wear" value="0" />
+	</div>
 </div>

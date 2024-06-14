@@ -168,6 +168,11 @@ textarea.quest-desc {
 }
 
 /* Wounds Tab */
+div.wound-box
+{
+	margin: 1em;
+}
+
 div.wound-row {
 	display: grid;
 	column-gap: 1em;
@@ -176,4 +181,15 @@ div.wound-row {
 	vertical-align: middle;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+}
+
+div.wound-totals-box {
+    display: grid;
+    grid-template-columns: 5em 5em 5em 5em;
+    column-gap: 1em;
+	grid-row-gap: 0.5em;
+}
+
+div.wound-totals-box h2 {
+    grid-column: 1 / span 4;
 }
