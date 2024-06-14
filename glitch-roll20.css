@@ -16,6 +16,11 @@ input.tabselect-quests:checked ~ div.sheet-quests
 	display: block;
 }
 
+input.tabselect-wounds:checked ~ div.sheet-wounds
+{
+	display: block;
+}
+
 
 /* No resizing textarea controls */
 textarea {
@@ -141,4 +146,11 @@ span.quest-separator {
 
 textarea.quest-desc {
 	height: 12em;
+}
+
+/* Wounds Tab */
+div.wound-row {
+	display: grid
+	column-gap: 1em;
+	grid-template-columns: 5em 5em auto;
 }

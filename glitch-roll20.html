@@ -1,6 +1,7 @@
 
 <input type="radio" class="tabselect-main" name="attr_tab" value="0" checked="checked" /> Attributes
 <input type="radio" class="tabselect-quests" name="attr_tab" value="1" /> Quests
+<input type="radio" class="tabselect-wounds" name="attr_tab" value="2" /> Wounds
 <hr>
 
 <!-- The Main Tab with attributes and costs. -->
@@ -205,4 +206,28 @@
 			<textarea class='sheet-input quest-desc' id="attr_quest5_desc" name="attr_quest5_desc" rows="2" cols="50"></textarea>
 		</div>
 	</div>
+</div>
+
+<!-- The Wounds Tab -->
+<div class="sheet-tab sheet-wounds">
+	<h1>Active Wounds</h1>
+	<fieldset class="repeating_wounds">
+		<div class="wound-row">
+			<select name="attr_cost" class="sheet-input">
+				<option value="Stilling" selected="selected">Stilling</option>
+				<option value="Fugue">Fugue</option>
+				<option value="Immersion">Immersion</option>
+				<option value="Burn">Burn</option>
+				<option value="Stilling">Stilling</option>
+			</select>
+			
+			<select name="attr_severity" class="sheet-input">
+				<option value="10" selected="selected">Superficial</option>
+				<option value="25">Serious</option>
+				<option value="50">Transformative</option>
+			</select>
+			
+			<input type="text" class="sheet-input" name="attr_description">
+		</div>
+	</fieldset>
 </div>
