@@ -174,4 +174,6 @@ div.wound-row {
 	grid-template-columns: 8em 10em auto;
 	width: 100%;
 	vertical-align: middle;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
