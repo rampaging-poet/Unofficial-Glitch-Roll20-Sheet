@@ -211,23 +211,30 @@
 <!-- The Wounds Tab -->
 <div class="sheet-tab sheet-wounds">
 	<h1>Active Wounds</h1>
+	
+	<div class="wound-row">
+		<span>Cost</span>
+		<span>Severity</span>
+		<span>Description</span>
+	</div>
+	
 	<fieldset class="repeating_wounds">
 		<div class="wound-row">
-			<select name="attr_cost" class="sheet-input">
+			<select name="attr_cost" class="sheet-input spacefilling-input">
 				<option value="Stilling" selected="selected">Stilling</option>
 				<option value="Fugue">Fugue</option>
 				<option value="Immersion">Immersion</option>
 				<option value="Burn">Burn</option>
-				<option value="Stilling">Stilling</option>
+				<option value="Wear">Wear</option>
 			</select>
 			
-			<select name="attr_severity" class="sheet-input">
+			<select name="attr_severity" class="sheet-input spacefilling-input">
 				<option value="10" selected="selected">Superficial</option>
 				<option value="25">Serious</option>
 				<option value="50">Transformative</option>
 			</select>
 			
-			<input type="text" class="sheet-input" name="attr_description">
+			<input type="text" class="sheet-input spacefilling-input" name="attr_description">
 		</div>
 	</fieldset>
 </div>

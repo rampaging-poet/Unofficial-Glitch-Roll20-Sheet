@@ -106,6 +106,25 @@ input.aligned-inputs {
 	flex-shrink: 0;
 }
 
+input.spacefilling-input {
+	width: 100%;
+	vertical-align: middle;
+	flex-shrink: 0;
+}
+
+select.aligned-inputs {
+	width: 80%;
+	vertical-align: middle;
+	flex-shrink: 0;
+}
+
+select.spacefilling-input {
+	width: 100%;
+	vertical-align: middle;
+	flex-shrink: 0;
+}
+
+
 textarea.luthe {
 	height: 4em;
 }
@@ -150,7 +169,9 @@ textarea.quest-desc {
 
 /* Wounds Tab */
 div.wound-row {
-	display: grid
+	display: grid;
 	column-gap: 1em;
-	grid-template-columns: 5em 5em auto;
+	grid-template-columns: 8em 10em auto;
+	width: 100%;
+	vertical-align: middle;
 }
