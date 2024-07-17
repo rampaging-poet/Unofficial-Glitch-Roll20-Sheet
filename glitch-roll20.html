@@ -2,6 +2,7 @@
 <input type="radio" class="tabselect-main" name="attr_tab" value="0" checked="checked" /> Attributes
 <input type="radio" class="tabselect-quests" name="attr_tab" value="1" /> Quests
 <input type="radio" class="tabselect-wounds" name="attr_tab" value="2" /> Wounds
+<input type="radio" class="tabselect-infect" name="attr_tab" value="3" /> Infection
 <hr>
 
 <!-- The Main Tab with attributes and costs. -->
@@ -31,7 +32,7 @@
 
 	<!-- Attributes and costs -->
 	<div class="glitch_atribs grid-box">
-		<h2> Attributes</h2>
+		<h2>Attributes</h2>
 		
 		<span>EIDE</span>
 		<input type="number" class='sheet-input' min="0" max="7" name="attr_eide" value="0" />
@@ -264,4 +265,17 @@
 		<p><small><em>The story of how you die for the final time.</em></small></p>
 		<textarea class='sheet-input free-entry' id="attr_wounds_ending" name="attr_wounds_ending" rows="8" cols="50"></textarea>
 	</div>
+</div>
+
+<!-- The Infection tab -->
+<div class="sheet-tab sheet-infect">
+    <div class="grid-box">
+        <p class="aligned-inputs">
+			<span class="aligned-inputs">Infection:</span>
+			<input type="number" class="sheet-input" min="0" max="7" value="2" name="attr_infection"</input>
+		</p>
+
+        <p>Your Curse / Infection Description</p>
+        <textarea class='sheet-input free-entry' id="attr_infection_desc" name="attr_infection_desc" rows="8" cols="50"></textarea>
+    </div>
 </div>

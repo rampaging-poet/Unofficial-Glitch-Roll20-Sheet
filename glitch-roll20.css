@@ -21,6 +21,11 @@ input.tabselect-wounds:checked ~ div.sheet-wounds
 	display: block;
 }
 
+input.tabselect-infect:checked ~ div.sheet-infect
+{
+    display: block;
+}
+
 
 /* No resizing textarea controls */
 textarea {
